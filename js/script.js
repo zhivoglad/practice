@@ -55,8 +55,8 @@ function showMyDB() {
 function rememberMyFilms() {
 	for (let i = 1; i < 2; i++) {
 
-		const a = prompt("Какой последний фильм вы смотрели?", ""),
-			b = prompt("Какова ваша оценка?", "");
+		const a = prompt("Какой последний фильм вы смотрели?", "").trim(),
+			b = prompt("Какова ваша оценка?", "").trim();
 
 		if (a !== null && a !== '' && a.length <= 50) {
 			console.log('done');
